@@ -7,6 +7,7 @@
     <meta name="description" content="Gorilla Tag mod menu">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="Logo.png">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 <header>
@@ -32,5 +33,32 @@
       </nav>
     </div>
 </header>
+
+    <div>
+        <main>
+            <div class="container">
+                <h2>Contact</h2>
+            <form name="contact" netlify>
+                <p>
+                    <label>Name <input type="text" name="name" required placeholder="Enter your name"/></label>
+                </p>
+                <p>
+                    <label>Email <input type="email" name="email" required placeholder="Enter your email"/></label>
+                </p>
+                <p>
+                    <div>
+                        <label>Message</label>
+                    </div>
+                    <div>
+                        <textarea name="message" placeholder="Type your message"></textarea>
+                    </div> 
+                </p>
+                <p>
+                    <button type="submit" class="button">Send</button>
+                </p>
+            </form>
+            </div>
+        </main>
+    </div>
 </body>
 </html>

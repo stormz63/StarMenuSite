@@ -102,6 +102,29 @@ main {
     font-weight: bold;
 }
 
+input {
+    height: 30px;
+    border: solid;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: rgb(121, 121, 121);
+    border-width: 1px;
+    color: white;
+}
+
+textarea {
+    border: solid;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: rgb(121, 121, 121);
+    border-width: 1px;
+    margin-left: 15px;
+    margin-top: 10px;
+    height: 70px;
+    width: 100%;
+    color: white;
+}
+
 @media (max-width: 900px) {
     main {
         flex-direction: column;
