@@ -1,64 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Menu - Contact</title>
-    <meta name="description" content="Gorilla Tag mod menu">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="Logo.png">
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Menu - Contact</title>
+  <meta name="description" content="Gorilla Tag mod menu" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="Logo.png" />
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-<header>
+  <header>
     <div class="nav-left" style="margin-left: 40px;">
       <nav>
         <a href="index.html">
-            <button>Home</button>
+          <button>Home</button>
         </a>
       </nav>
     </div>
 
     <div>
-        <a href="index.html">
-            <img src="Logo.png">
-        </a>
+      <a href="index.html">
+        <img src="Logo.png" alt="Star Menu Logo" />
+      </a>
     </div>
 
     <div class="nav-right" style="margin-right: 40px;">
       <nav>
         <a href="discord.html" target="_blank">
-            <button  style="margin-right: 15px;">Discord</button>
+          <button style="margin-right: 15px;">Discord</button>
         </a>
       </nav>
     </div>
-</header>
+  </header>
 
-    <div>
-        <main>
-            <div class="container">
-                <h2>Contact</h2>
-            <form name="contact" netlify>
-                <p>
-                    <label>Name <input type="text" name="name" required placeholder="Enter your name"/></label>
-                </p>
-                <p>
-                    <label>Email <input type="email" name="email" required placeholder="Enter your email"/></label>
-                </p>
-                <p>
-                    <div>
-                        <label>Message</label>
-                    </div>
-                    <div>
-                        <textarea name="message" placeholder="Type your message"></textarea>
-                    </div> 
-                </p>
-                <p>
-                    <button type="submit" class="button">Send</button>
-                </p>
-            </form>
-            </div>
-        </main>
+  <main>
+    <div class="container">
+      <h2 class="glow">Contact</h2>
+      <form name="contact" method="POST" netlify>
+        <p>
+          <label>
+            Name<br/>
+            <input type="text" name="name" required placeholder="Enter your name" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Email<br />
+            <input type="email" name="email" required placeholder="Enter your email" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Message<br/>
+            <textarea name="message" placeholder="Type your message here" required></textarea>
+          </label>
+        </p>
+        <p>
+          <button type="submit" class="button">Send</button>
+        </p>
+      </form>
     </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Star Menu. All rights reserved</p>
+  </footer>
 </body>
 </html>
