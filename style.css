@@ -167,6 +167,19 @@ hr {
     width: 40%;
 }
 
+.image-row {
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.image-row img {
+  max-width: 45%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
 @media (max-width: 900px) {
     main {
         flex-direction: column;
