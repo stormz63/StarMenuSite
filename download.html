@@ -9,24 +9,38 @@
 </head>
 <body>
   <header>
-    <div class="nav-left" style="margin-left: 40px;">
+    <div class="logo">
+      <a href="index.html">
+        <img src="Logo.png" alt="Star Menu Logo" />
+      </a>
+    </div>
+
+    <div class="nav-left">
       <nav>
         <a href="index.html"><button>Home</button></a>
+        <a href="photos.html"><button>Photos</button></a>
+        <a href="contact.html"><button>Contact</button></a>
       </nav>
     </div>
 
-    <div>
-      <a href="index.html"><img src="Logo.png" alt="Star Menu Logo"/></a>
-    </div>
-
-    <div class="nav-right" style="margin-right: 40px;">
+    <div class="nav-right">
       <nav>
-        <a href="discord.html" target="_blank"><button style="margin-right: 15px;">Discord</button></a>
+        <a href="discord.html" target="_blank"><button>Discord</button></a>
       </nav>
     </div>
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
+
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="index.html"><button>Home</button></a>
+      <a href="download.html"><button>Download</button></a>
+      <a href="photos.html"><button>Photos</button></a>
+      <a href="contact.html"><button>Contact</button></a>
+      <a href="discord.html" target="_blank"><button>Discord</button></a>
+    </nav>
   </header>
 
-  <main class="center-content" style="margin-bottom: 230px;">
+  <main class="center-content">
     <div class="button-wrapper">
       <img src="Github.png" class="github-logo" alt="GitHub Logo" />
       <a href="https://github.com/stormz63/StarMenu" target="_blank">
@@ -38,5 +52,13 @@
   <footer>
     <p>&copy; 2025 Star Menu. All rights reserved</p>
   </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    hamburger.addEventListener('click', () => {
+      mobileNav.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>

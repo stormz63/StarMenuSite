@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Menu - Photos</title>
-    <link rel="icon" type="image/x-icon" href="Logo.png"/>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Menu - Photos</title>
+  <link rel="icon" type="image/x-icon" href="Logo.png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header>
-    <div class="nav-left" style="margin-left: 40px;">
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="Logo.png" alt="Star Menu Logo" />
+      </a>
+    </div>
+
+    <div class="nav-left">
       <nav>
         <a href="index.html"><button>Home</button></a>
-        <a href="download.html"><button style="margin-left: 10px;">Download Menu</button></a>
+        <a href="download.html"><button>Download Menu</button></a>
       </nav>
     </div>
 
-    <div>
-      <a href="index.html"><img src="Logo.png" alt="Star Menu Logo" style="margin-right: 200px;"/></a>
-    </div>
-
-    <div class="nav-right" style="margin-right: 40px;">
+    <div class="nav-right">
       <nav>
-        <a href="discord.html" target="_blank"><button style="margin-right: 15px;">Discord</button></a>
+        <a href="discord.html" target="_blank"><button>Discord</button></a>
       </nav>
     </div>
-</header>
 
-<main>
-<main>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="index.html"><button>Home</button></a>
+      <a href="download.html"><button>Download Menu</button></a>
+      <a href="photos.html"><button>Photos</button></a>
+      <a href="discord.html" target="_blank"><button>Discord</button></a>
+    </nav>
+  </header>
+
+  <main>
     <div class="container image-row">
-        <img src="StarMenu.png" alt="Star Menu Screenshot">
-        <img src="StarMenuNoBG.png" alt="Star Menu Transparent">
+      <img src="StarMenu.png" alt="Star Menu Screenshot" />
+      <img src="StarMenuNoBG.png" alt="Star Menu Transparent" />
     </div>
-</main>
+  </main>
 
-</main>
+  <footer>
+    <p>&copy; 2025 Star Menu. All rights reserved</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    hamburger.addEventListener('click', () => {
+      mobileNav.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
